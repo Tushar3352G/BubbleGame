@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"josefin sans";
+}
+
+html,body{
+    width:100%;
+    height:100vh;
+    font-size:62.5%;
+}
+
+
+.main{
+    width: 100%;
+    height:100vh;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    background:rgb(92, 119, 198);
+}
+
+.gamepanel{
+    width:80%;
+    border-radius:1.5rem;
+    height:80vh;
+    overflow: hidden;
+    background:#fff;
+    -webkit-border-radius:1.5rem;
+    -moz-border-radius:1.5rem;
+    -ms-border-radius:1.5rem;
+    -o-border-radius:1.5rem;
+}
+
+.gpaneltop{
+    width:100%;
+    background:royalblue;
+    height:8rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:0 25%;
+}
+
+
+.gpaneltop .scorebox{
+    font-size:1.6rem;
+    display: flex;
+    gap:1rem;
+    align-items: center;
+    color: #fff;
+    font-weight:500;
+    text-transform:uppercase;
+}
+
+.gpaneltop .scorebox span{
+    background:#fff;
+    width:4rem;
+    height:3.5rem;
+    font-weight:900;
+    color:#000;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius:0.6rem;
+    -webkit-border-radius:0.6rem;
+    -moz-border-radius:0.6rem;
+    -ms-border-radius:0.6rem;
+    -o-border-radius:0.6rem;
+}
+
+.gpanelbody{
+    width:100%;
+    height:calc(100% - 8rem);
+    background:#f1f1f1;
+    padding:1rem 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.gbubble{
+    background:royalblue;
+    width:4rem;
+    height:4rem;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    font-size:1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color:#fff;
+    font-weight:600;
+    cursor: pointer;
+    flex-shrink:0;
+}
+
+.gbubble:hover,
+.gbubble:active{
+    background:rgb(27, 77, 229);
+}
+
+.overtext{
+    font-size:4rem;
+}
+
+.startbtn{
+    display: block;
+    max-width:100%;
+    border:0;
+    width:fit-content;
+    margin-inline:auto;
+    background:royalblue;
+    font-size:1.6rem;
+    color:#fff;
+    padding:1rem 2rem;
+    border-radius:0.5rem;
+    -webkit-border-radius:0.5rem;
+    -moz-border-radius:0.5rem;
+    -ms-border-radius:0.5rem;
+    -o-border-radius:0.5rem;
+    cursor: pointer;
+}
+
+.GameOverBox{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.audio{
+    display:none;
+}
